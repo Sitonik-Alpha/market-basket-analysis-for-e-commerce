@@ -59,5 +59,7 @@ print(frq_items)
 **calculating the association rules using frequent itemsets and the data frame and support value to examine how strong the associations are**
 rules = association_rules(frq_items, metric="lift", min_threshold=1)
 rules.head()
+
+From the association rules above, RED RETROSPOT CHARLOTTE BAG and  RED RETROSPORT CHARLOTTE BAG are items with the highest association with each other since these two items have the highest "lift" value. The higher the lift value, the higher the association between the items. If the lift value is more than 1, it is enough to say that those two items are associated with each other. In our case the highest value is 16.609974, which is very high. It means those two items are very good to be sold together. So, if a customer logs in the site and purchases a product, another product with the highest association with that clicked or purchased product will be recommended to them.
  
  
